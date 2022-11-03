@@ -5,7 +5,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "noode index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "keywords": [],
