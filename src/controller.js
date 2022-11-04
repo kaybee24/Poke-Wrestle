@@ -10,5 +10,8 @@ export function getOnePokemon(req, res) {
 }
 
 export function getOnePokemonsCategory(req, res) {
-    const { name, type, base } = req.params;
+    console.log(req.params.id, req.params.info)
+    const poke = database[req.params.id - 1]
+    const requestedSubfield = poke[req.params.info]
+    res.json({ requestedSubfield })
 }
